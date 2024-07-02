@@ -1,17 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Set the Slack display name and email
-  document.getElementById("slack-name").innerText = "Your Slack Display Name";
-  document.getElementById("slack-email").innerText = "your-email@example.com";
-  document.getElementById("slack-profile-picture").src =
-    "path/to/your/image.jpg"; // Ensure the image has natural dimensions
+const time = document.getElementById("current-time-utc");
 
+document.addEventListener("DOMContentLoaded", function () {
   // Function to update the current time and day
   function updateTime() {
     const now = new Date();
     const utcTime = now.toUTCString();
     const currentDay = now.toLocaleDateString("en-US", { weekday: "long" });
 
-    document.getElementById("current-time-utc").innerText = utcTime;
+    time.innerText = utcTime;
     document.getElementById("current-day").innerText = currentDay;
   }
 
@@ -19,5 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
   updateTime();
 
   // Update the time and day every second
-  setInterval(updateTime, 1000);
+        setInterval(updateTime, 1000);
+        console.log(time);
 });
