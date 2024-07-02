@@ -2,71 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yusfuldev Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1 class="logo">Yusfuldev</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social-icons">
-        <a href="https://github.com/Yusfuldev/"
-          ><img src="/images/iconmonstr-github-2.svg" title="github-profile" alt="github-icon"
-        /></a>
-        <a href=https://linkedin.com/in/owokoniran-yusuf-adebayo"
-"
-          ><img
-          title="linkedIn-profile"
-            src="/images/linkedin.svg"
-            alt="linkedIn-icon"
-        /></a>
-        <a href="https://X.com/@hadebayo4u"
-          ><img title="x-profile" src="/images/X.svg" alt="X-icon"
-        /></a>
-        <a href="https://facebook.com/hadebayo4u"
-          ><img title="facebook-profile" src="/images/facebook1.svg" alt="facebook-icon"
-        /></a>
-      </div>
-    </header>
-    <main>
-      <section id="about">
-        <h1>About Me</h1>
-        <h2>Owokoniran Yusuf</h2>
-        <p>Front-end Developer</p>
-        <p><span class="title">Slack-Name: </span></p>
-        <p>current time in utc</p>
-        <p>current day</p>
-        <p>slack Email </p>
-        <img src="./images/profile pic.jpeg" height="600" width="450" alt="">
-        <h3>My Goals</h3>
-      </section>
-      <section id="skills">
-        <h1>Skills</h1>
-        <p>Content for Skills.</p>
-      </section>
+    <h1>My Tech Goals for the Next 2 Years</h1>
+    <p>
+      In the next two years, my goal in the tech field is to become a proficient
+      front-end developer. I aim to leverage my knowledge and technical
+      expertise to create solutions that solve problems and enhance the quality
+      of life for people worldwide.
+    </p>
+    <h2 data-testid="slackDisplayName" id="slack-name"></h2>
+    <h2 data-testid="slackEmail" id="slack-email"></h2>
 
-      <section id="projects">
-        <h1>Projects</h1>
-        <p>Content for Projects.</p>
-      </section>
-
-      <section id="contact">
-        <h1>Contact</h1>
-        <p>Contact information and form.</p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2024 Your Website. All rights reserved.</p>
-    </footer>
+    <img
+      data-testid="slackProfilePicture"
+      id="slack-profile-picture"
+      src="profile.jpg"
+      alt="Slack Profile Picture"
+    />
+    <h2>
+      Current Time (UTC):
+      <span data-testid="currentTimeUTC" id="current-time-utc"></span>
+    </h2>
+    <h2>
+      Current Day of the Week:
+      <span data-testid="currentDay" id="current-day"></span>
+    </h2>
+    <h2>Useful Links</h2>
+    <ul>
+      <li>
+        <a data-testid="hngLink" href="https://hng.tech/learn">HNG Learn</a>
+      </li>
+      <li>
+        <a data-testid="keywordLink" href="https://keyword.dog">Keyword Dog</a>
+      </li>
+      <li>
+        <a data-testid="scrapeanywebLink" href="https://scrapeanyweb.site"
+          >Scrape Any Web</a
+        >
+      </li>
+    </ul>
+    <script src="script.js"></script>
   </body>
-  <script src="/app.js"></script>
 </html>
